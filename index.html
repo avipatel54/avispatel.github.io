@@ -1,336 +1,166 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <title>Avi Patel</title>
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  
-	<!--CSS for the index.html-->
-	<link rel="stylesheet" href="vendor/portfolio/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-    rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
-    rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/flip.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avi Patel</title>
 
-  <!-- Custom styles for this template -->
-  <link href="css/creative.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
+    <!-- Custom CSS -->
+    <style>
+        section {
+            padding: 60px 0;
+        }
+
+        .bg-custom-light {
+            background-color: #f9f9f9;
+        }
+
+        .text-custom {
+            color: #3e3e3e;
+        }
+
+        .mylink {
+            color: inherit;
+        }
+    </style>
 </head>
 
-<body id="page-top">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<body style="font-family: Exo;">
+<!-- Home Section -->
+<header id="home" class="jumbotron jumbotron-fluid bg-dark text-white text-center h-100 m-0">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><span class="h4 display-1;" style="letter-spacing: 0.2vh">Avi Patel</span></a>
-      <button class="
-          navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive" style="letter-spacing: 0.2vh">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
+        <h1 class="display-3">Avi Patel</h1>
+        <p class="lead">Java Developer | 3+ Years of Experience</p>
+        <button type="button" data-toggle="tooltip" data-placement="top" title="LinkedIn"
+                class="btn btn-lg btn-dark" onclick="window.open('https://www.linkedin.com/in/avi-patel-0504/')">
+            <i class="fab fa-linkedin"></i>
+        </button>
+        <button type="button" data-toggle="tooltip" data-placement="top" title="Email"
+                class="btn btn-lg btn-dark" onclick="window.open('mailto:avipatel8224@gmail.com')">
+            <i class="fa fa-envelope"></i>
+        </button>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="bg-custom-light">
+    <div class="container">
+        <h2 class="display-4 text-center pb-4">About Me</h2>
+        <div class="row">
+            <div class="col-md-9">
+                <p class="text-justify">
+                    I am a skilled Java Developer with over 3 years of experience in designing, developing, and
+                    maintaining scalable software solutions. I specialize in Java Spring Boot, Microservices,
+                    RESTful APIs, and Kafka. Currently, I work at Brevitaz Systems, contributing to the OpenEPCIS
+                    project, a comprehensive supply chain framework. I have a proven track record of enhancing
+                    system performance, implementing robust APIs, and optimizing solutions for diverse client needs.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="hero-dark.jpg" class="img-fluid" alt="Profile Image" style="border-radius: 100000px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="p-3">
+    <div class="container">
+        <h2 class="display-4 text-center pb-4">Experience</h2>
+        <div class="row">
+            <div class="col-12 p-4">
+                <div class="card bg-custom-light">
+                    <div class="p-4">
+                        <h3 class="font-weight-bold">Brevitaz Systems</h3>
+                        <p class="font-weight-bold">Software Scientist | April 2024 - Present</p>
+                        <ul>
+                            <li>Analyzed project requirements and proposed solutions for the OpenEPCIS project.</li>
+                            <li>Developed RESTful APIs for enhanced system integration.</li>
+                            <li>Implemented solutions for log tracing and multi-tenant architecture optimization.</li>
+                            <li>Integrated Keycloak with OpenSearch dashboards for improved security and visualization.</li>
+                        </ul>
+
+                        <h3 class="font-weight-bold">Apexon</h3>
+                        <p class="font-weight-bold">Engineer-I | Sep 2021 - March 2024</p>
+                        <ul>
+                            <li>Designed and implemented new features for the Fiserv Payment System.</li>
+                            <li>Developed a Kafka-based retry mechanism for resilient API communications.</li>
+                            <li>Implemented microservices architecture using MySQL and Redis for scalability.</li>
+                            <li>Created a proof-of-concept for Kafka Dead Letter Queue for efficient data handling.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="bg-custom-light">
+    <div class="container">
+        <h2 class="display-4 text-center pb-4">Skills</h2>
+        <ul class="list-unstyled">
+            <li>Frameworks: Java Spring Boot, Microservices, REST API</li>
+            <li>Tools: Kafka, Redis, MySQL, Elasticsearch</li>
+            <li>Version Control: Git</li>
+            <li>Other: Keycloak, OpenSearch, AWS (S3, SQS, SNS)</li>
         </ul>
-      </div>
     </div>
-  </nav>
-  <header class="masthead text-center text-white d-flex">
-    <div class="container my-auto">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h1 class="text-uppercase">
-            <strong class="display-3" style="letter-spacing: 1.0vh;">Avi Patel</strong>
-          </h1>
-          <hr style="opacity:0">
-        </div>
-        <div class="col-lg-8 mx-auto">
-          <p class="text-faded mb-5">“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”</p>
-          <a class="btn btn-light btn-xl sr-button js-scroll-trigger" style="border-radius:0;" href="https://drive.google.com/file/d/1_5t4VRguT7LNUTDEQnfIzJrVgD8Alc2m/view?usp=sharing"><span class="h6">RESUME / CV</span></a>
-        </div>
-      </div>
-    </div>
-  </header>
+</section>
 
-  <section class="bg-primary" id="about">
+<!-- Education Section -->
+<section id="education" class="p-3">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading text-white">I've got what you need!</h2>
-          <hr class="light my-4" style="opacity:0">
-          <p class="text-faded mb-4">Programming languages are used to create programs that implement specific Tasks. Real world Prolems & Some personal projects can make our development skills and problem solving ability more powerful. So in this blog, I am going to show you some of the projects i created, when i started my programming career.</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+        <h2 class="display-4 text-center pb-4">Education</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="card bg-custom-light">
+                    <div class="p-4">
+                        <h3>Bachelor of Engineering in Information Technology</h3>
+                        <p>Silver Oak College, Gujarat Technological University | 2017 - 2021</p>
+                        <p>CGPA: 8.3</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <section id="services">
+<!-- Contact Section -->
+<section id="contact" class="p-3">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Projects are like ..</h2>
-          <hr class="my-4" style="opacity:0">
-        </div>
-      </div>
+        <h2 class="display-4 text-center pb-4">Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Submit</button>
+        </form>
     </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-3 bg-dark text-white text-center">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="service-box mt-5 mx-auto">
-            <i class="fas fa-4x fa-gem text-dark mb-3 sr-icon-1"></i>
-            <h3 class="mb-3">Study Projects</h3>
-            <p class="text-muted mb-0">With meaningful concept</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="service-box mt-5 mx-auto">
-            <i class="fas fa-4x fa-paper-plane text-dark mb-3 sr-icon-2"></i>
-            <h3 class="mb-3">Ready to use</h3>
-            <p class="text-muted mb-0">Download and execute</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="service-box mt-5 mx-auto">
-            <i class="fas fa-4x fa-code text-dark mb-3 sr-icon-3"></i>
-            <h3 class="mb-3">Up to Date</h3>
-            <p class="text-muted mb-0"></p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="service-box mt-5 mx-auto">
-            <i class="fas fa-4x fa-heart text-dark mb-3 sr-icon-4"></i>
-            <h3 class="mb-3">Made with Love</h3>
-            <p class="text-muted mb-0">By Avi Patel</p>
-          </div>
-        </div>
-      </div>
+        <p>&copy; 2024 Avi Patel | All Rights Reserved</p>
     </div>
-  </section>
-  <section class="skills" id="skills"  style="background:#FCFDFA;">
-      <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Technical Skills</h2>
-          <hr class="my-4" style="opacity:0">
-        </div>
-		<div class="content">
-			<div class="development-wrapper">
-				<ul class="skills-bar-container">
-					<li>
-						<div class="progressbar-title">
-							<h3>Web development with Spring Boot and Flask</h3>
-							<span class="percent" id="html-pourcent"></span>
-						</div>
-						<div class="bar-container" data-percent="90">
-							<span class="progressbar" id="progress-html"></span>
-						</div>
-					</li>
-					<li>
-						<div class="progressbar-title">
-							<h3>Java</h3>
-							<span class="percent" id="angular-pourcent"></span>
-						</div>
-						<div class="bar-container" data-percent="85">
-							<span class="progressbar" id="progress-angular"></span>
-						</div>
-					</li>
-					<li>
-						<div class="progressbar-title">
-							<h3>Object oriented programming and design patterns</h3>
-							<span class="percent" id="php-pourcent"></span>
-						</div>
-						<div class="bar-container" data-percent="80">
-							<span class="progressbar" id="progress-php"></span>
-						</div>
-					</li>
-					<li>
-						<div class="progressbar-title">
-							<h3>Python</h3>
-							<span class="percent" id="html-pourcent"></span>
-						</div>
-						<div class="bar-container" data-percent="80">
-							<span class="progressbar" id="progress-html"></span>
-						</div>						
-					</li>	
-					<li>
-						<div class="progressbar-title">
-							<h3>Image processing with OpenCV Python</h3>
-							<span class="percent" id="angular-pourcent"></span>
-						</div>
-						<div class="bar-container" data-percent="80">
-							<span class="progressbar" id="progress-angular"></span>
-						</div>
-					</li>
-					<li>
-						<div class="progressbar-title">
-							<h3>SQL (MySQL, MongoDB, MLDB)</h3>
-							<span class="percent" id="javascript-pourcent"></span>
-						</div>
-						<div class="bar-container" data-percent="78">
-							<span class="progressbar" id="progress-javascript"></span>
-						</div>
-					</li>	
-					
-					<li>
-						<div class="progressbar-title">
-							<h3>Data structures, Design and analysis of algorithms</h3>
-							<span class="percent" id="css-pourcent"></span>
-						</div>
-						<div class="bar-container" data-percent="70">
-							<span class="progressbar" id="progress-css"></span>
-						</div>
-					</li>
-									
-															
-					<li>
-						<div class="progressbar-title">
-							<h3>Data analysis and visualization with Python Pandas, <br>matplotlib and Dash</h3>
-							<span class="percent" id="angular-pourcent"></span>
-						</div>
-						<div class="bar-container" data-percent="70">
-							<span class="progressbar" id="progress-angular"></span>
-						</div>
-					</li>
-					
-					
-				</ul>
-			</div>
-			<div class="tools-knowledge-wrapper">
-				<div class="tools-wrapper">
-					<h2 class="title">Tools</h2>
-					<ul class="tools">
-						<li>
-							<i class="fa fa-check" aria-hidden="true"></i> Intellij
-						</li>
-						<li>
-							<i class="fa fa-check" aria-hidden="true"></i> PyCharm
-						</li>
-						<li>
-							<i class="fa fa-check" aria-hidden="true"></i> Visual studio code
-						</li>
-						
-						<li>
-							<i class="fa fa-check" aria-hidden="true"></i> Jupyter Notebook & Lab
-						</li>
-						
-						<li>
-							<i class="fa fa-check" aria-hidden="true"></i> Git & Github
-						</li>
-						<li>
-							<i class="fa fa-check" aria-hidden="true"></i> Jira
-						</li>
-					</ul>
-				</div>
-				<div class="knowledge-wrapper">
-						<h2 class="title">Platforms</h2>
-						<ul class="knowledge">
-							<li>
-								<i class="fa fa-check" aria-hidden="true"></i> Linux
-							</li>
-							<li>
-								<i class="fa fa-check" aria-hidden="true"></i> Windows
-							</li>
-							
-							
-						</ul>
-					</div>
-				<div class="knowledge-wrapper">
-					<h2 class="title">Other skills</h2>
-					<ul class="knowledge">
-						<li>
-							<i class="fa fa-check" aria-hidden="true"></i> IOT
-						</li>
-						<li>
-							<i class="fa fa-check" aria-hidden="true"></i> CI/CD
-						</li>
-                        
-						<li>
-							<i class="fa fa-check" aria-hidden="true"></i> ...
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="clear"></div>
-		</div>
-		<div class="clear"></div>
+</footer>
 
-	</section>
-  
-  <section class="bg-dark text-white">
-    <div class="container text-center">
-        <i class="fab fa-github fa-3x mb-3 sr-contact-2"></i>
-      <h2 class="mb-4">Open source projects</h2>
-      <a class="btn btn-light btn-xl sr-button js-scroll-trigger" href="https://github.com/AVISPATEL" target="_blank">Go to my repositories!</a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading">Let's Get In Touch!</h2>
-          <hr class="my-4" style="opacity:0">
-          <p class="mb-5">Ready to start your next project? That's great! Send us an email if you have any
-            query or suggestion for new project
-            and we will get back to you!</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
-          <p>            
-          </p>
-          <a class="btn btn-light btn-xl sr-button js-scroll-trigger" style="border-radius:0;" href="mailto:avipatel8224@gmail.com">Contact us!</a>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  <!--Modal-->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-body text-success text-center h5">
-          Coming soon
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Modal End-->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/portfolio/index.js"></script>
-  <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
-  <script>
-      window.onload = () => {
-    let el = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
-    el.parentNode.removeChild(el);
-    }
-  </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
